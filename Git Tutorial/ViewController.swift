@@ -12,11 +12,12 @@ class ViewController: UIViewController {
     
     let msg = "Hello, Git!"
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(msg)
-        
-        print(reverse(text: "stressed"))
+        label.text = reverse(text: "stressed")
     }
     
     func reverse(text: String) -> String {
